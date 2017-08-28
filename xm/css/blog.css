@@ -1,0 +1,63 @@
+h1, h2, h3, h4, h5, h6, p{
+    font-size: 16px;
+    color: #848484;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+img{
+    width:100%;
+}
+#nav1-ul>li>a{
+    color: #FFCAB9;
+}
+#nav2{
+    padding: 10px 0 10px 0;
+    font-size: 15px;
+}
+#nav2-ul li>a:hover{
+    color: #FF5722;
+}
+div.banner{
+    background: #f1f1f1;
+}
+#blog{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#blog>div.blog{
+    width: 350px;
+    height: 450px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+#blog>div.blog .intro{
+    background: #ffffff;
+    padding: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 160px;
+    left: 60px;
+}
+#blog>div.blog .intro>h3{
+    font-style: italic;
+}
+#blog>div.blog .intro>div>p{
+    float: left;
+    color: #B3B3B3;
+    font-style: italic;
+}
+#blog>div.blog .intro>div>span{
+    float: right;
+    color: #B3B3B3;
+}
+#blog>div.blog .intro>p{
+    clear: both;
+}
+#blog>div.blog .intro>p+p{
+    font-size: 1.5em;
+    color: #FF602F;
+}
