@@ -1,0 +1,247 @@
+body,html,div{
+    margin:0;
+    padding:0;
+}
+html{
+    height:100%;
+}
+body{
+    height: 100%;
+}
+.container{
+    position:relative ;
+    height:100%;
+    overflow:hidden;
+    white-space: nowrap;
+}
+.container:hover .slide_buy{
+    transform:translate3d(-5%, 0, 0);
+}
+/****Ò³Ãæ×ó°ë±ß****/
+.slide{
+    height:100%;
+    width:80%;
+    display: inline-block;
+    position:relative;
+    transition:all .8s ease;
+    text-align: center;
+}
+.slide_buy{
+    margin-left:-30%;
+}
+.container .slide_buy:hover{
+    transform:translate3d(5%, 0, 0)
+}
+.slide .wrapper{
+    position:relative;
+    height:100%;
+    overflow: hidden;
+    transform: skew(-5deg) translateZ(0);
+}
+.slide_buy .wrapper{
+    margin-right:-20px;
+}
+/****±³¾°****/
+.slide .wrapper .bg{
+    position: absolute;
+    top:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    transition: all .8s ease;
+    transform:skew(5deg) translateZ(0);
+}
+.slide_buy .wrapper .bg{
+    background-image:url('../img/bg_blue.jpg');
+    margin-left:20%;
+    right: -10%;
+}
+.slide:hover .wrapper .bg{
+     -webkit-transform: skew(5deg) scale(1.1) translateZ(0);
+}
+.slide_buy:hover .bg{
+    -webkit-transform: translate3d(-3%,0,0) skew(5deg);
+}
+/****ÕÚÕÖ²ã****/
+.slide .wrapper .mask{
+    position: absolute;
+    top:0;
+    width: 150%;
+    height:100%;
+    background-color: black;
+    opacity: 0;
+    transition: opcity .8s;
+}
+.slide_buy .wrapper .mask{
+    right: -10%;
+}
+.container:hover .slide .wrapper .mask{
+    opacity:.5;
+}
+.container .slide:hover .wrapper .mask{
+    opacity: 0;
+}
+
+
+/****×ó°ë±ßÄÚÈÝ****/
+.content{
+    position:absolute;
+    text-align: center;
+    width: 62.5%;
+    height: 100%;
+    top:0;
+    z-index: 50;
+    transition: all .8s ease;
+}
+.slide_buy .content{
+    right:0;
+    margin-left:30%\9;
+
+}
+.slide:hover .content{
+    opacity: 1;
+}
+.slide_buy:hover .content{
+    width: 75%;
+}
+.content_inner{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-195px;
+    margin-left:-235px;
+}
+/****Âò¼ÒÍ¼±ê****/
+.slide .title{
+    width:490px;
+    height:160px;
+    margin:0 auto 0;
+    background-size:80%;
+    background-repeat:no-repeat;
+    background-position: center;
+    transition:all .8s;
+}
+.slide_buy .title{
+    background-image:url("../img/buy.png");
+    background-position-x:68px;
+}
+.slide:hover .title{
+    transform:translate3d(0, -29px, 0);
+}
+/****ÎÄ×ÖÃèÊö****/
+.slide .description{
+    color:white;
+    font-size: 18px;
+    margin-bottom: 65px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .8s ease;
+    text-shadow:5px 5px 15px rgba(0,0,0,0.5);
+}
+.slide:hover .description{
+    opacity: 1;
+}
+/****ÍúÍúÍ¼±ê****/
+.slide .icon{
+    width:82px;
+    height:82px;
+    margin:0 auto 18px;
+    background-repeat:no-repeat;
+    background-size:79%;
+    background-position: center;
+    transition: background-image .25s;
+}
+.slide .wangwang .icon{
+    background-image: url("../img/wangwang.png");
+}
+.slide_buy:hover .wangwang .icon{
+    background-image:url("../img/wangwang1.png");
+}
+.name{
+    font-size: 20px;
+    text-align: center;
+    margin-top:-15px;
+    margin-bottom:35px;
+}
+/****ÁË½â¸ü¶à****/
+.more{
+    font-size:14px;
+    text-decoration:underline !important;
+    color:#ccc;
+}
+/****CSS»æÖÆÈý½Ç****/
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width:4px 0 4px 7px;
+    border-color:transparent transparent transparent #ccc;
+    border-style:dashed dashed dashed solid;
+}
+
+
+
+/****Ò³ÃæÓÒ°ë±ß****/
+.container:hover .slide_sell{
+    transform: translate3d(5%, 0, 0);
+}
+.container .slide_sell:hover{
+    transform:translate3d(-5%, 0, 0);
+}
+.slide_sell .wrapper{
+    margin-left:-20px;
+}
+/****±³¾°****/
+.slide_sell .wrapper .bg{
+    left:-10%;
+    margin-left:-20%;
+    background-image:url('../img/bg_red.jpg');
+}
+.slide_sell:hover .bg{
+    transform: translate3d(3%, 0, 0) skew(5deg);
+}
+/****ÕÚÕÖ²ã****/
+.slide_sell .wrapper .mask{
+    left: -10%;
+}
+/****ÓÒ°ë±ßÄÚÈÝ****/
+.slide_sell .content{
+    left:0;
+}
+.slide_sell:hover .content{
+    width: 75%;
+}
+/****Âô¼ÒÍ¼±ê****/
+.slide_sell .title{
+    background-image:url("../img/sell.png");
+    background-position-x:55px;
+}
+.slide_sell:hover .title{
+    transform:translate3d(0, -29px, 0);
+}
+/****ÎÄ×ÖÃèÊö****/
+.slide_sell .description{
+    color:white;
+    font-size: 18px;
+    margin-bottom: 65px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .8s ease;
+    text-shadow:5px 5px 15px rgba(0,0,0,0.5);
+}
+.slide_sell:hover .description{
+    opacity: 1;
+}
+/****Ç§Å£Í¼±ê****/
+.qianniu .icon{
+    width:82px;
+    height:82px;
+    margin:0 auto 18px;
+    background:url("../img/qianniu.png") no-repeat center;
+    background-size:79%;
+    transition: background-image .25s;
+}
+.slide_sell:hover .qianniu .icon{
+    background-image:url("../img/qianniu1.png");
+}

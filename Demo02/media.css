@@ -1,0 +1,33 @@
+
+@media screen and (max-width: 1200px){
+	.why_content{
+		width: 100%;
+		padding: 60px 10px 20px 0;
+	}
+	.why_content_list{
+		width: 95%;
+	}
+	.why_content .list_win{
+		width: 33%;
+	}
+	.why_content_list img{
+		display: block;
+    	width: 100%;
+	}
+	.why_content_list .text{
+		height: 160px;
+	}
+	
+}
+@media screen and (max-width: 800px){
+	.why_content_list .text{
+			height: 180px;
+			background: url(why_text.png) no-repeat 10px 30px;
+			background-size: 15px;
+		}
+}
+@media screen and (min-width:320px) and (max-width:730px){
+.why_content .list_win{
+		width: 100%;
+	}
+}
